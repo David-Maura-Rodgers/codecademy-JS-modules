@@ -7,6 +7,10 @@ const toggleHiddenElement = (domElement) => {
     }
 }
 
+const changeText = (domElement, newText) => {
+  domElement.innerHTML = newText;
+}
+
 const changeToFunkyColor = (domElement) => {
   const r = Math.random() * 255;
   const g = Math.random() * 255;
@@ -15,4 +19,4 @@ const changeToFunkyColor = (domElement) => {
   domElement.style.background = `rgb(${r}, ${g}, ${b})`;
 }
 
-export { toggleHiddenElement, changeToFunkyColor };
+export { toggleHiddenElement, changeText, changeToFunkyColor };
