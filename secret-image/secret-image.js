@@ -1,5 +1,11 @@
 /* secret-image.js */
-import { toggleHiddenElement } from '../modules/dom-functions.js';
+
+// Option 1 to import resources (commented out to allow Option 2 to work)
+// import { toggleHiddenElement } from '../modules/dom-functions.js';
+
+// Option 2 to import resources using imported domFunctions object
+import domFunctions from '../modules/dom-functions.js';
+const { toggleHiddenElement } = domFunctions;
 
 const buttonElement = document.getElementById('secret-button');
 const imgElement = document.getElementById('secret-img');
